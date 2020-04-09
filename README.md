@@ -34,8 +34,9 @@ Sur le serveur Linux:<br>
 AllowOverride None <br>
 Options +ExecCGI <br>
 AddHandler cgi-script .cgi .pl .py <br>
-Require all granted <br>
-</Directory> <br>
+Require all granted <br> </Directory> <br>
+
+hello
 
 <br>
 
