@@ -49,14 +49,11 @@ Depuis le dossier "form":
 - Copier le formulaire html dans votre répertoire apache (/var/www/votresite/index.html) ou créez/modifiez le votre. - Copier le script python dans /usr/lib/cgi-bin
 (Optionel) Depuis le dossier "documentation":
 - Copiez le document .xlsx là où vous souhaitez stocker la documentation, ou basez vous sur votre documentation déjà existante.
-
 <br>
 
 Installez le module openpyxl pour que le script python puisse lire les fichiers excels:<br>
 sudo apt-get install python-openpyxl
-
-<br><br>
-
+<br>
 Installez le module paramiko pour que le script python puisse se connecter en SSH:<br>
 sudo apt-get install python-paramiko
 # Changement des variables du script selon votre infrastructure:
