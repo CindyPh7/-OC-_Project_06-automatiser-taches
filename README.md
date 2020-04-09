@@ -35,9 +35,10 @@ AllowOverride None <br>
 Options +ExecCGI <br>
 AddHandler cgi-script .cgi .pl .py <br>
 Require all granted <br>
-</Directory>
+</Directory> <br>
 
-<br><br>
+<br>
+
 Sauvegardez la modification.
 <br><br>
 2.	Ensuite, vous devez activer le module CGI d'Apache pour pouvoir exécuter les scripts:
