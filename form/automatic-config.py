@@ -52,10 +52,12 @@ def change_DHCP_Config(DHCP_IP,DHCP_SSH_PORT,Win_Serv_user,Win_Serv_pwd,DHCP_NAM
 	ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 	ssh.connect(hostname = DHCP_IP, port= DHCP_SSH_PORT, username = Win_Serv_user, password = Win_Serv_pwd)
 	stdin, stdout, stderr = ssh.exec_command(powershell_cmd_rm_DHCP)
+	### Permet d'attendre que la commande de suppression de reservation DHCP se termine
 	while not stdout.channel.exit_status_ready():
 		if stdout.channel.recv_ready():
 			stdoutLines = stdout.readlines()
 	stdin, stdout, stderr = ssh.exec_command(powershell_cmd_add_DHCP)
+	### Permet d'attendre que la commande d'ajout de reservation DHCP se termine
 	while not stdout.channel.exit_status_ready():
 		if stdout.channel.recv_ready():
 			stdoutLines = stdout.readlines()
