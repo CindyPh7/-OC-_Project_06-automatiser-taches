@@ -91,3 +91,14 @@ DHCP_SERV_NAME = "DHCP-SERV"
 ###### La plage DHCP dans lequel est fait le changement 
 scopeID = "10.50.2.20"
 
+# Fonctions du scripts
+### def change_DHCP_Config
+Cette fonction permet de changer la réservation DHCP d'un client. La fonction génère une commande powershell qui supprime l'ancienne réservation et une commande qui ajoute une nouvelle réservation selon les informations rentrées dans le formulaire.
+
+<br>
+
+### def edit_documentation
+Cette fonction permet de modifier la documentation en remplaçant les informations d'une machine indiquées dans le formulaire
+
+## Vous devez commenté ou décommenter les fonctions selon votre besoin.
+
