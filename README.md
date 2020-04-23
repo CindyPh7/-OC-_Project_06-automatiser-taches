@@ -1,6 +1,6 @@
 ## Table des matières
-* [Context du projet] (#project-context)
-* [Prérequis] (#prerequis)
+*[Context du projet] (#project-context)
+*[Prérequis] (#prerequis)
 *
 *
 *
