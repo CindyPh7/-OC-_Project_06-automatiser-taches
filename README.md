@@ -33,7 +33,7 @@ Dans le dossier Documentation:<br>
 
 # Instructions
 ### Configuration serveur
-####Sur le serveur Linux:<br>
+#### Sur le serveur Linux:<br>
 •	Installation d'Apache2: sudo apt-get install apache2 <br>
 
 •	Activation du modules CGI <br>
