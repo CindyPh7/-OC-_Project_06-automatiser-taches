@@ -68,25 +68,26 @@ sudo apt-get install python-openpyxl
 Installez le module paramiko pour que le script python puisse se connecter en SSH:<br>
 sudo apt-get install python-paramiko
 # Changement des variables du script selon votre infrastructure
-- VARIABLES DE LA DOCUMENTATION doc_path : Chemin + nom de la doc excel ou csv
+#### VARIABLES DE LA DOCUMENTATION <br>
+doc_path : Chemin + nom de la doc excel ou csv
 doc_path = "/var/www/cgi-bin/tab_doc.xlsx"
 
-- VARIABLES DU SERVEUR DHCP
-""" Adresse IP du serveur DHCP a renseigner pour la connnexion SSH """
+#### VARIABLES DU SERVEUR DHCP
+###### Adresse IP du serveur DHCP a renseigner pour la connnexion SSH 
 DHCP_SERV_IP = "10.50.2.10"
 
-""" Port de connexion SSH vers le serveur """
+###### Port de connexion SSH vers le serveur 
 DHCP_CONNECT_PORT= 22
 
-""" Nom d'utilisateur du serveur pour se connecter en SSH """
+###### Nom d'utilisateur du serveur pour se connecter en SSH 
 Windows_Serv_username = "SERV-USERNAME"
 
-""" Mot de passe de l'utiisateur pour la connexion SSH """
+###### Mot de passe de l'utiisateur pour la connexion SSH 
 Windows_Serv_password = "PASSWORD"
 
-""" Nom du serveur DHCP """
+###### Nom du serveur DHCP 
 DHCP_SERV_NAME = "DHCP-SERV"
 
-""" La plage DHCP dans lequel est fait le changement """
+###### La plage DHCP dans lequel est fait le changement 
 scopeID = "10.50.2.20"
 
