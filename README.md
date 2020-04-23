@@ -32,7 +32,8 @@ Dans le dossier Documentation:<br>
 •	Un fichier exemple de documentation (Tableau_exemple.xlsx)<br>
 
 # Instructions
-Sur le serveur Linux:<br>
+### Configuration serveur
+####Sur le serveur Linux:<br>
 •	Installation d'Apache2: sudo apt-get install apache2 <br>
 
 •	Activation du modules CGI <br>
