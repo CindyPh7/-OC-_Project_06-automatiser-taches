@@ -3,7 +3,7 @@
 * [Prérequis](#prerequis)
 * [Contenu de ce repository](#contenu-de-ce-repository)
 * [Instructions](#instructions)
-* [Changement des variables du script selon votre infrastructure](#changement-des-variables-du script-selon-votre-infrastructure)
+* [Changement des variables du script selon votre infrastructure](#changement-des-variables-du-script-selon-votre-infrastructure)
 
 # Context du projet
 Ce projet est une démonstration de solution qui automatise la configuration d'éléments d'une infrastructure dont la documentation est importante et stricte, mais où les procédures de changement sont homogènes et répétitives. 
