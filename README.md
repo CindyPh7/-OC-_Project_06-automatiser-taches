@@ -1,4 +1,11 @@
-# -OC-_Project_06
+## Table des matières
+* [Context du projet] (#project-context)
+* [Prérequis] (#prerequis)
+*
+*
+*
+
+# Context du projet
 Ce projet est une démonstration de solution qui automatise la configuration d'éléments d'une infrastructure dont la documentation est importante et stricte, mais où les procédures de changement sont homogènes et répétitives. 
 <br>
 Pour des raisons de sécurité, il est normal de vouloir documenter l'état d'une infrastrucrure (n° de poste affecté à un port de switch par exemple), et de contrôler chaque étape des procédures de modification de configuration. Toutes les entreprises n'ont pas forcément encore tous les outils nécessaires pour automatiser leur configuration et leur documentation.
