@@ -1,6 +1,6 @@
 ## Table des matières
-*[Context du projet] (#project-context)
-*[Prérequis] (#prerequis)
+* [Context du projet] (#context-du-projet)
+* [Prérequis] (#prerequis)
 *
 *
 *
@@ -14,7 +14,7 @@ Explication de mon context: Les prises murals sont affectés à un port du switc
 <br>
 Cette solution propose donc d'automatiser les configurations en remplissant les informations à changer sur un formulaire Web. Lors de la validation du formulaire, le lancement d'un script effectue toutes ces tâches à notre place. 
 
-# Prérequis
+# Prerequis
 •	Un serveur Linux en tant que serveur web <br><br>
 (Selon votre cas)<br>
 •	Un Windows Server pour la configuration DHCP<br>
