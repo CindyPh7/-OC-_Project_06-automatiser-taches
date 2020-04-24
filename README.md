@@ -1,3 +1,6 @@
+# Automatisation de configuration serveur par formulaire Web
+###### Dans le cadre du projet 06 du parcours Administrateur Infrastructure & Cloud d'Openclassrooms.
+
 ## Table des matières
 * [Context du projet](#context-du-projet)
 * [Prérequis](#prerequis)
@@ -6,7 +9,7 @@
 * [Changement des variables du script selon votre infrastructure](#changement-des-variables-du-script-selon-votre-infrastructure)
 * [Fonctions du scripts](#fonctions-du-scripts)
 
-# Context du projet
+## Context du projet
 Ce projet est une démonstration de solution qui automatise la configuration d'éléments d'une infrastructure dont la documentation est importante et stricte, mais où les procédures de changement sont homogènes et répétitives. 
 <br>
 Pour des raisons de sécurité, il est normal de vouloir documenter l'état d'une infrastrucrure (n° de poste affecté à un port de switch par exemple), et de contrôler chaque étape des procédures de modification de configuration. Toutes les entreprises n'ont pas forcément encore tous les outils nécessaires pour automatiser leur configuration et leur documentation.
@@ -15,14 +18,23 @@ Explication de mon context: Les prises murals sont affectés à un port du switc
 <br>
 Cette solution propose donc d'automatiser les configurations en remplissant les informations à changer sur un formulaire Web. Lors de la validation du formulaire, le lancement d'un script effectue toutes ces tâches à notre place. 
 
-# Prerequis
+## Technologie utilisée
+- Ubuntu Server 18.04.4
+- Windows Server 2016
+- Python
+- Powerhsell
+- Comware 5 & 7 (à venir)
+- Apache2/httpd
+- HTML
+
+## Prerequis
 •	Un serveur Linux en tant que serveur web <br><br>
 (Selon votre cas)<br>
 •	Un Windows Server pour la configuration DHCP<br>
 •	Un switch <br>
 •	Un document .csv ou .xlsx <br>
 
-# Contenu de ce repository
+## Contenu de ce repository
 Ce répertoire contient 2 dossiers: Form et Documentation.<br>
 Dans le dossier Form:<br>
 •	Un exemple de formulaire web (index.html)<br>
@@ -32,7 +44,7 @@ Dans le dossier Form:<br>
 Dans le dossier Documentation:<br>
 •	Un fichier exemple de documentation (Tableau_exemple.xlsx)<br>
 
-# Instructions
+## Instructions
 ### Configuration serveur
 #### Sur le serveur Linux:<br>
 •	Installation d'Apache2: sudo apt-get install apache2 <br>
@@ -68,7 +80,7 @@ sudo apt-get install python-openpyxl
 <br>
 Installez le module paramiko pour que le script python puisse se connecter en SSH:<br>
 sudo apt-get install python-paramiko
-# Changement des variables du script selon votre infrastructure
+## Changement des variables du script selon votre infrastructure
 #### VARIABLES DE LA DOCUMENTATION <br>
 doc_path : Chemin + nom de la doc excel ou csv
 doc_path = "/var/www/cgi-bin/tab_doc.xlsx"
@@ -92,7 +104,7 @@ DHCP_SERV_NAME = "DHCP-SERV"
 ###### La plage DHCP dans lequel est fait le changement 
 scopeID = "10.50.2.20"
 
-# Fonctions du scripts
+## Fonctions du scripts
 ### def change_DHCP_Config
 Cette fonction permet de changer la réservation DHCP d'un client. La fonction génère une commande powershell qui supprime l'ancienne réservation et une commande qui ajoute une nouvelle réservation selon les informations rentrées dans le formulaire.
 
