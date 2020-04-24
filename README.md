@@ -1,8 +1,11 @@
 # Automatisation de configuration serveur par formulaire Web
 ###### Dans le cadre du projet 06 du parcours Administrateur Infrastructure & Cloud d'Openclassrooms.
 
+<br>
+
 ## Table des matières
 * [Context du projet](#context-du-projet)
+* [Technologies utilisées](#technologies-utilisées)
 * [Prérequis](#prerequis)
 * [Contenu de ce repository](#contenu-de-ce-repository)
 * [Instructions](#instructions)
@@ -18,7 +21,7 @@ Explication de mon context: Les prises murals sont affectés à un port du switc
 <br>
 Cette solution propose donc d'automatiser les configurations en remplissant les informations à changer sur un formulaire Web. Lors de la validation du formulaire, le lancement d'un script effectue toutes ces tâches à notre place. 
 
-## Technologie utilisée
+## Technologies utilisées
 - Ubuntu Server 18.04.4
 - Windows Server 2016
 - Python
@@ -113,5 +116,5 @@ Cette fonction permet de changer la réservation DHCP d'un client. La fonction g
 ### def edit_documentation
 Cette fonction permet de modifier la documentation en remplaçant les informations d'une machine indiquées dans le formulaire
 
-## Vous devez commenté ou décommenter les fonctions selon votre besoin.
+#### Vous devez commenté ou décommenter les fonctions selon votre besoin.
 
