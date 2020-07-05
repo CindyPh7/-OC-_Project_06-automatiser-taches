@@ -25,7 +25,7 @@ Cette solution propose donc d'automatiser les configurations en remplissant les 
 - Ubuntu Server 18.04.4
 - Windows Server 2016
 - Python
-- Powerhsell
+- Powershell
 - Comware 5 & 7 (à venir)
 - Apache2/httpd
 - HTML
